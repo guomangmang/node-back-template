@@ -1,0 +1,23 @@
+@url = http://localhost:3001
+@json=Content-Type: application/json
+
+###
+get {{url}}
+
+###
+post {{url}}/api/user
+{{json}}
+
+{
+"name":"111"
+}
+
+
+###
+post {{url}}/api/login
+{{json}}
+
+{
+"username":"andrew_123",
+"password":"hon123well"
+}
